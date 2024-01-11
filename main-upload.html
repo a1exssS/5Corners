@@ -1,0 +1,86 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>[*meta_title*] | Пятый Угол</title>
+	<meta name="description" content="[[SCHARS? &p=`[*meta_desc*]`]][[META_DESC_HEAD]]">
+	<meta name="keywords" content="[[SCHARS? &p=`[*meta_keys*]`]]">
+	<link rel="icon" href="/favicon.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<link rel="stylesheet" href="./css/fancybox.css">
+	<link rel="stylesheet" href="slick.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="main.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/common.js?ver=v[!TS!]"></script>
+	<script src="js/embedvkgallery.js?werewrw"></script>
+
+	<!--Plugin CSS file with desired skin-->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+
+	<!--jQuery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!--Plugin JavaScript file-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+	<script>
+		(function ($) {
+			$(function () {
+				$('.vk').EmbedVkGallery();
+			});
+		})(jQuery);
+	</script>
+	<script type="text/javascript">
+		var reformalOptions = {
+			project_id: 981624,
+			show_tab: false,
+			project_host: "5ugol.reformal.ru"
+		};
+
+		(function () {
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.async = true;
+			script.src = ('https:' == document.location.protocol ? 'https://' : 'http://') +
+				'media.reformal.ru/widgets/v3/reformal.js';
+			document.getElementsByTagName('head')[0].appendChild(script);
+		})();
+	</script>
+</head>
+
+<body>
+
+	<div class="upload-block" id="frmraschet">
+		<div class="container-xl">
+			<div class="box-form">
+				<div class="form">
+					<div class="name">
+						Есть проект дома? Смело присылайте!
+					</div>
+					<p>Мы рассчитаем стоимость в течение дня и подскажем как сэкономить без потери качества</p>
+
+					<div class="upload" onclick="$(this).next().click()">
+						<a>Прикрепить файл</a>
+					</div>
+					<input type="file" id="filename2">
+					<div class="field">
+						<span>+7</span>
+						<input type="text" class="phone-number f_4001" placeholder="(999) 999-99-99">
+					</div>
+					<button class="but">Отправить заявку</button>
+					<div class="bottom-text answ">
+						Нажимая на кнопку, вы принимаете <a href="politika">политику конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+			<div class="box-image">
+				<img src="./img/upload-block.png" class="image">
+			</div>
+		</div>
+	</div>
+</body>
