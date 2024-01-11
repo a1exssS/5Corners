@@ -4520,8 +4520,9 @@ a.yt.hastitle .title {
 }
 
 .slide-button:last-child:hover {
-	background: #19CDA2;
-	border: 1px solid #19CDA2;
+	background: #1E575B;
+	color: #fff;
+	border: 1px solid #1E575B;
 }
 
 @media (max-width:575px) {
