@@ -414,92 +414,226 @@ $(document).ready(function () {
 
 				Фильтр для каталога
 
+				Полностью изменен *(частично)
+
  ********************************************
  ********************************************/
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	// Клик кнопка  "Размер"
-	$('.block_size-param-main').click(() => {
-		$('.block-event').addClass('opacity1');
+	// Мои добавки в mob filter
+	// Клик кнопка  "mob filter"
+	const element = document.querySelectorAll(".block-selection_filter");
+	element.forEach((element) => {
 
-		$('.svg-color-size').addClass('svg-color-active');
-		$('.galochka-svg-size').addClass('active-svg');
-		$('.title-text-size').addClass('active-text-fff');
-		$('.block_size-param-main').addClass('active-filter');
-		$('.selection_filter-size').removeClass('hidden');
+		const children = Array.from(element.children[0].children);
+		const showAllButton = document.createElement("div");
+		showAllButton.setAttribute('type', 'button')
+		showAllButton.classList.add('block-selection_filter-show-btn')
+		let initialChildrenCount
+		if (window.innerWidth < 575) {
+			initialChildrenCount = 6
+		} else {
+			initialChildrenCount = 9999
+		}
+		let isExpanded = false;
+
+		children.forEach((child, index) => {
+			if (index >= initialChildrenCount) {
+				child.style.display = "none";
+			}
+		});
+		if (children.length > 6) {
+			element.querySelector('.block-btn-filter').classList.add('after-active')
+		}
+		if (children.length > initialChildrenCount) {
+			showAllButton.textContent = "Показать все";
+			element.querySelector('.select-box').appendChild(showAllButton, element.nextSibling);
+
+			showAllButton.addEventListener("click", () => {
+				children.forEach((child, index) => {
+					if (index >= initialChildrenCount) {
+						child.style.display = isExpanded ? "none" : "";
+					}
+				});
+
+				showAllButton.textContent = isExpanded ? "Показать все" : "Скрыть";
+				isExpanded = !isExpanded;
+			});
+		}
+	})
+
+
+
+	$('.block_btm-mob-filter-btn').click(() => {
+		if (window.innerWidth < 576) {
+			$('.from-selection_filter').css({
+				'position': 'fixed', "top": "0", "left": "0", "right": "0", "bottom": "0", "z-index": "10", "height": "100%", "background": "#fff", 'margin-top': "0", "padding": "0 15px", "overflow": 'auto', "display": "flex", "flex-direction": 'column', "flex-wrap": "nowrap"
+			});
+			$('body').css({ 'overflow': 'hidden' })
+			$('.main-block_filter').css({ 'display': 'flex' });
+			$('.block-selection_filter').css({ 'width': '100%', "top:": "20px" });
+			$('.main-block_filter div').css({ 'justify-content': 'space-between' });
+			$('.block_btm-clear-filter').css({ 'align-items': 'center' });
+			$('.main-block_filter > div').css({ 'width': '100%' });
+			$('.box-title-param').css({ 'width': '100%' });
+			$('.right-block_sort').css({ 'display': 'none' });
+			$('.block-btn-filter-mob').css({ 'display': 'block' });
+			$('.main-block_filter-header').css({ "display": "flex" });
+		}
+	})
+
+	$('.main-block_filter-header_btn').click(() => {
+		$('.main-block_filter-header').css({ 'display': '' });
+		$('body').css({ 'overflow': '' })
+		$('.right-block_sort').css({ 'display': '' });
+		$('.from-selection_filter').removeAttr("style")
+		$('.main-block_filter').removeAttr("style")
+		$('.block-selection_filter').css({ "width": "", "justify-content": "" })
+		$('.block_size-param-main, .block_area-param-main, .block_prise-param-main, .block_floor-param-main, .block_options-param-main, .block_bedroom-param-main, .block_btm-clear-filter').removeAttr("style")
+		$('.box-title-param').removeAttr("style")
+		$('.block-btn-filter-mob').css({ 'display': '' });
+	})
+
+	function updateDropdownDirection(dropdown) {
+		if (window.innerWidth > 575) {
+			$('.main-block_filter-header').css({ 'display': '' });
+			$('body').css({ 'overflow': '' })
+			$('.right-block_sort').css({ 'display': '' });
+			$('.from-selection_filter').removeAttr("style")
+			$('.main-block_filter').removeAttr("style")
+			$('.block-selection_filter').css({ "width": "", "justify-content": "" })
+			$('.block_size-param-main, .block_area-param-main, .block_prise-param-main, .block_floor-param-main, .block_options-param-main, .block_bedroom-param-main, .block_btm-clear-filter').removeAttr("style")
+			$('.box-title-param').removeAttr("style")
+			$('.block-btn-filter-mob').css({ 'display': '' });
+		}
+		if (window.innerWidth > 575) {
+			var dropdownRect = dropdown[0].getBoundingClientRect();
+			var isInRightHalf = dropdownRect.left > window.innerWidth / 2;
+
+			// Устанавливаем правильное положение dropdown в зависимости от расположения
+			if (isInRightHalf) {
+				dropdown.css("right", 0);
+				dropdown.css("left", "auto");
+			} else {
+				dropdown.css("right", "auto");
+				dropdown.css("left", 0);
+			}
+			$(".selection_filter-prise").css({ "right": "0", "left": "auto" });
+		}
+		if (window.innerWidth < 630 && window.innerWidth > 575) {
+			$(".selection_filter-options").css({ "right": "0", "left": "auto" });
+		}
+	}
+
+
+	// Изменяем направление dropdown при загрузке страницы
+	$(".block-selection_filter").each(function () {
+		updateDropdownDirection($(this));
+	});
+
+	// Изменяем направление dropdown при изменении размера окна
+	$(window).resize(function () {
+		$(".block-selection_filter").each(function () {
+			updateDropdownDirection($(this));
+		});
+	});
+
+	// Клик кнопка  "Размер"
+	$('.box-title-param-size').click(() => {
+		if (window.innerWidth > 575) {
+			$('.block-event').toggleClass('opacity1');
+		}
+		$('.svg-color-size').toggleClass('svg-color-active');
+		$('.galochka-svg-size').toggleClass('active-svg');
+		$('.title-text-size').toggleClass('active-text-fff');
+		$('.block_size-param-main').toggleClass('active-filter');
+		$('.selection_filter-size').toggleClass('hidden');
 	})
 	//кнопка  "Размер"
 
 	// кнопка "Этажность"
 	$('.box-title-param-floor').click(() => {
-		$('.block-event').addClass('opacity1');
+		``
+		if (window.innerWidth > 575) {
+			$('.block-event').toggleClass('opacity1');
+		}
 
-		$('.svg-color-floor').addClass('svg-color-active');
-		$('.galochka-svg-floor').addClass('active-svg');
-		$('.title-text-floor').addClass('active-text-fff');
-		$('.block_floor-param-main').addClass('active-filter');
-		$('.selection_filter-floor').removeClass('hidden');
+		$('.svg-color-floor').toggleClass('svg-color-active');
+		$('.galochka-svg-floor').toggleClass('active-svg');
+		$('.title-text-floor').toggleClass('active-text-fff');
+		$('.block_floor-param-main').toggleClass('active-filter');
+		$('.selection_filter-floor').toggleClass('hidden');
 	})
 	// кнопка "Этажность"
 
 	// кнопка "Цена"
 	$('.box-title-param-prise').click(() => {
-		$('.block-event').addClass('opacity1');
+		if (window.innerWidth > 575) {
+			$('.block-event').toggleClass('opacity1');
+		}
 
-		$('.svg-color-prise').addClass('svg-color-active');
-		$('.galochka-svg-prise').addClass('active-svg');
-		$('.title-text-prise').addClass('active-text-fff');
-		$('.block_prise-param-main').addClass('active-filter');
-		$('.selection_filter-prise').removeClass('hidden');
+		$('.svg-color-prise').toggleClass('svg-color-active');
+		$('.galochka-svg-prise').toggleClass('active-svg');
+		$('.title-text-prise').toggleClass('active-text-fff');
+		$('.block_prise-param-main').toggleClass('active-filter');
+		$('.selection_filter-prise').toggleClass('hidden');
 	})
 	// кнопка "цена"
 
 	// кнопка "Площадь"
 	$('.box-title-param-area').click(() => {
-		$('.block-event').addClass('opacity1');
+		if (window.innerWidth > 575) {
+			$('.block-event').toggleClass('opacity1');
+		}
 
-		$('.svg-color-area').addClass('svg-color-active');
-		$('.galochka-svg-area').addClass('active-svg');
-		$('.title-text-area').addClass('active-text-fff');
-		$('.block_area-param-main').addClass('active-filter');
-		$('.selection_filter-area').removeClass('hidden');
+		$('.svg-color-area').toggleClass('svg-color-active');
+		$('.galochka-svg-area').toggleClass('active-svg');
+		$('.title-text-area').toggleClass('active-text-fff');
+		$('.block_area-param-main').toggleClass('active-filter');
+		$('.selection_filter-area').toggleClass('hidden');
 	})
 	// кнопка "Площадь"
 
 	// кнопка "Кол-во спален"
 	$('.box-title-param-bedroom').click(() => {
-		$('.block-event').addClass('opacity1');
+		if (window.innerWidth > 575) {
+			$('.block-event').toggleClass('opacity1');
+		}
 
-		$('.svg-color-bedroom').addClass('svg-color-active');
-		$('.galochka-svg-bedroom').addClass('active-svg');
-		$('.title-text-bedroom').addClass('active-text-fff');
-		$('.block_bedroom-param-main').addClass('active-filter');
-		$('.selection_filter-bedroom').removeClass('hidden');
+		$('.svg-color-bedroom').toggleClass('svg-color-active');
+		$('.galochka-svg-bedroom').toggleClass('active-svg');
+		$('.title-text-bedroom').toggleClass('active-text-fff');
+		$('.block_bedroom-param-main').toggleClass('active-filter');
+		$('.selection_filter-bedroom').toggleClass('hidden');
 	})
 	// кнопка "Кол-во спален"
 
 	// кнопка "Опции"
 	$('.box-title-param-options').click(() => {
-		$('.block-event').addClass('opacity1');
+		if (window.innerWidth > 575) {
+			$('.block-event').toggleClass('opacity1');
+		}
 
-		$('.svg-color-options').addClass('svg-color-active');
-		$('.galochka-svg-options').addClass('active-svg');
-		$('.title-text-options').addClass('active-text-fff');
-		$('.box-title-param-options').addClass('active-filter');
-		$('.selection_filter-options').removeClass('hidden');
+		$('.svg-color-options').toggleClass('svg-color-active');
+		$('.galochka-svg-options').toggleClass('active-svg');
+		$('.title-text-options').toggleClass('active-text-fff');
+		$('.block_options-param-main').toggleClass('active-filter');
+		$('.selection_filter-options').toggleClass('hidden');
 	})
 	// кнопка "Опции"
 
 	// кнопка "Сортировка"
 	$('.box-title-param-sort').click(() => {
-		$('.block-event').addClass('opacity1');
+		if (window.innerWidth > 575) {
+			$('.block-event').toggleClass('opacity1');
+		}
 
-		$('.svg-color-sort').addClass('svg-color-active');
-		$('.galochka-svg-sort').addClass('active-svg');
-		$('.title-text-sort').addClass('active-text-fff');
-		$('.box-title-param-sort').addClass('active-filter');
-		$('.selection_filter-sort').removeClass('hidden');
+		$('.svg-color-sort').toggleClass('svg-color-active');
+		$('.galochka-svg-sort').toggleClass('active-svg');
+		$('.title-text-sort').toggleClass('active-text-fff');
+		$('.block_sort-param-main').toggleClass('active-filter');
+		$('.selection_filter-sort').toggleClass('hidden');
 	})
 	// кнопка "Сортировка"
 
@@ -536,7 +670,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		$('.svg-color-sort').removeClass('svg-color-active');
 		$('.galochka-svg-sort').removeClass('active-svg');
 		$('.title-text-sort').removeClass('active-text-fff');
-		$('.box-title-param-sort').removeClass('active-filter');
+		$('.block_sort-param-main').removeClass('active-filter');
 		$('.selection_filter-sort').addClass('hidden');
 		//bedroom param
 		$('.svg-color-bedroom').removeClass('svg-color-active');
@@ -548,7 +682,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		$('.svg-color-options').removeClass('svg-color-active');
 		$('.galochka-svg-options').removeClass('active-svg');
 		$('.title-text-options').removeClass('active-text-fff');
-		$('.box-title-param-options').removeClass('active-filter');
+		$('.block_options-param-main').removeClass('active-filter');
 		$('.selection_filter-options').addClass('hidden');
 	})
 
@@ -798,6 +932,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	}
 	inputRangeArea()
+
+	// Добавлен мобильный фильтр
+
+
+
 });
 const jsInputFrom = document.querySelector('.js-input-from');
 const value = jsInputFrom.value
@@ -816,3 +955,5 @@ $('.js-input-from').val()
 
  ********************************************
  ********************************************/
+
+
