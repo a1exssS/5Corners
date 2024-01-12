@@ -18,6 +18,6 @@
 
 9. cat-filters - https://a1exsss.github.io/5Corners/cat-filters
 
-10. full-filter-chunk - https://a1exsss.github.io/5Corners/full-filter-chunk
+10. full-filter-chunk - https://a1exsss.github.io/5Corners/full-filter-chunk (Был исправлен common.js для фильтра, изменения - стр.412 -> 690, также добавлены картинки close-icon.svg, filer-icon.svg)
 
-11. full-item-chunk - https://a1exsss.github.io/5Corners/full-item-chunk
+11. full-item-chunk - https://a1exsss.github.io/5Corners/full-item-chunk (добавлена картинка arrow-button.svg)
