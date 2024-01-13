@@ -5249,6 +5249,13 @@ a.yt.hastitle .title {
 
 /* Мои изменения в header after scroll (nav after scroll) */
 
+@media (max-width:739px) {
+
+	.header {
+		position: absolute;
+	}
+}
+
 .header ul {
 	display: none;
 }
