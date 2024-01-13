@@ -686,6 +686,47 @@ document.addEventListener('DOMContentLoaded', () => {
 		$('.selection_filter-options').addClass('hidden');
 	})
 
+	//  Мои изменения в header after scroll
+
+	$(document).ready(function () {
+		var changingElementContacts = $(".header .contacts-pc")
+		var changingElementEmail = $(".header .contacts-pc-email")
+		var changingElementSocials = $(".header .social")
+		var changingElement = $(".header .topnav");
+		var changingElementLogoImg = $(".header .logo img");
+		var changingElementLogo = $(".header .logo");
+		var changingElementMenu = $(".header .header__menu");
+		var changingElementPhone = $(".header .contacts-pc-phone");
+
+		$(window).scroll(function () {
+			// Получаем текущую высоту прокрутки
+			var scrollHeight = $(this).scrollTop();
+
+			// Если прокрутка больше 70px, меняем цвет фона элемента
+			if (scrollHeight > 1) {
+				if (window.innerWidth > 1199) {
+					changingElementPhone.css({ "font-size": "18px" })
+					changingElementMenu.css({ "gap": "20px" })
+					changingElementContacts.css({ "margin-right": "0" })
+					changingElementLogo.css({ "width": "50px", "overflow": "hidden" })
+					changingElementLogoImg.css({ "max-width": "unset" })
+					changingElementEmail.css({ "display": "none" })
+					changingElementSocials.css({ "display": "none" })
+					changingElement.css({ "display": "flex", "padding-top": "0px", "align-items": "center" });
+				}
+			} else {
+				changingElementPhone.removeAttr("style")
+				changingElementMenu.removeAttr("style")
+				changingElementContacts.removeAttr("style")
+				changingElementLogo.removeAttr("style")
+				changingElementLogoImg.removeAttr("style")
+				changingElementEmail.removeAttr("style")
+				changingElementSocials.removeAttr("style")
+				changingElement.removeAttr("style")
+			}
+		});
+	});
+
 	/*
 	* Логика кнопки очищения конкретного фильтра появление / нажатия
 	*
@@ -955,5 +996,4 @@ $('.js-input-from').val()
 
  ********************************************
  ********************************************/
-
 

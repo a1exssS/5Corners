@@ -4445,6 +4445,7 @@ a.yt.hastitle .title {
 	gap: 40px;
 }
 
+
 .contacts-pc a:first-child {
 	color: #fff;
 	font-weight: 700;
@@ -4455,6 +4456,10 @@ a.yt.hastitle .title {
 	color: #fff;
 	font-weight: 500;
 	font-size: 20px;
+}
+
+.contacts-pc a:hover {
+	color: #D8FEC4;
 }
 
 .header__menu {
@@ -5094,6 +5099,12 @@ a.yt.hastitle .title {
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 255, 255));
 }
 
+.range-slider-input,
+.js-range-slider-area,
+.js-range-slider {
+	display: none !important;
+}
+
 .main-block_filter-header {
 	display: none;
 	height: 70px;
@@ -5237,4 +5248,122 @@ a.yt.hastitle .title {
 	.item-page .row .col-lg-4:nth-child(2) {
 		order: 1;
 	}
+}
+
+/* Мои изменения в header after scroll (nav after scroll) */
+
+.header ul {
+	display: none;
+}
+
+.nav-after-scroll {
+	height: 46px;
+	background: #054448;
+	backdrop-filter: blur(27px);
+	border-bottom: 1px solid #1E575B;
+	border-top: 1px solid #1E575B
+}
+
+.nav-after-scroll ul li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.nav-after-scroll ul li a:hover {
+	color: #D8FEC4;
+}
+
+@media (max-width:1199px) {
+	.nav-after-scroll {
+		display: none;
+	}
+}
+
+.nav-after-scroll .wrap {
+	max-width: 1390px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.nav-after-scroll .header__menu {
+	align-items: center;
+}
+
+.nav-after-scroll .logo img {
+	max-width: unset !important;
+}
+
+.nav-after-scroll .contacts-pc {
+	margin-right: 0;
+	gap: 20px;
+}
+
+.nav-after-scroll .header__menu,
+.nav-after-scroll .logo {
+	display: none;
+}
+
+.nav-after-scroll .logo {
+	width: 50px;
+	overflow: hidden;
+}
+
+.nav-after-scroll ul li {
+	display: inline-block;
+}
+
+.nav-after-scroll a {
+	color: #fff;
+}
+
+.nav-after-scroll .flex {
+	height: 100%;
+	align-items: center;
+}
+
+.nav-after-scroll ul li:not(:last-child) {
+	margin-right: 20px;
+}
+
+.nav-after-scroll ul.topnav li:has(ul)>a {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.nav-after-scroll ul.topnav li:has(ul)>ul {
+	position: absolute;
+	top: 100%;
+	opacity: 0;
+	transform: translateY(-50%);
+	pointer-events: none;
+	transition: 0.3s;
+	display: inline-flex;
+	padding: 20px 25px !important;
+	flex-direction: column;
+	gap: 20px;
+	border-radius: 4px;
+	background: #1E575B;
+}
+
+.nav-after-scroll .social {
+	padding-top: 6px;
+}
+
+.nav-after-scroll .contacts {
+	text-align: right;
+	padding-top: 4px;
+}
+
+.nav-after-scroll .menu-button {
+	width: 30px;
+	height: 16px;
+	position: relative;
+	display: inline-block;
+	margin-top: 12px;
+	display: none;
 }

@@ -21,3 +21,7 @@
 10. full-filter-chunk - https://a1exsss.github.io/5Corners/full-filter-chunk (Был исправлен common.js для фильтра, изменения - стр.412 -> 690, также добавлены картинки close-icon.svg, filer-icon.svg)
 
 11. full-item-chunk - https://a1exsss.github.io/5Corners/full-item-chunk (добавлена картинка arrow-button.svg)
+
+12. nav - https://a1exsss.github.io/5Corners/nav (небольшая навигация под header + изменения в common.js стр. 689 -> 728)
+
+13. header+nav - https://a1exsss.github.io/5Corners/header+nav (объеденил header и nav чтобы показать как это работает вметсе)
