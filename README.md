@@ -20,7 +20,7 @@
 
 10. full-filter-chunk - https://a1exsss.github.io/5Corners/full-filter-chunk (Был исправлен common.js для фильтра, изменения - стр.412 -> 690, также добавлены картинки close-icon.svg, filer-icon.svg)
 
-11. full-item-chunk - https://a1exsss.github.io/5Corners/full-item-chunk (добавлена картинка arrow-button.svg)
+11. full-item-chunk - https://a1exsss.github.io/5Corners/full-item-chunk (добавлена картинка arrow-button.svg, в head была добавлена ссылка на swiper.css стр.11, и в конце body была добавлена сама логика swiper js (за место пердыдущего слайдера) )
 
 12. nav - https://a1exsss.github.io/5Corners/nav (небольшая навигация под header + изменения в common.js стр. 689 -> 728)
 
