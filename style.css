@@ -4488,6 +4488,12 @@ a.yt.hastitle .title {
 	}
 }
 
+@media (max-width:575px) {
+	.header__menu {
+		gap: 10px;
+	}
+}
+
 @media (max-width:767px) {
 	.call {
 		display: none;
