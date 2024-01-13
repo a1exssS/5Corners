@@ -8,6 +8,7 @@
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -24,68 +25,29 @@
 </head>
 
 <body>
-	<div class="menubg"></div>
-	<nav class="mobile-menu">
-		<a class="close"><i class="fa fa-close"></i></a>
-		<div class="logo">
-			<a href="/"><img src="img/logo.svg"></a>
-		</div>
-		<ul>
-			<li><a href="#">О нас</a></li>
-			<li><a href="#">Проекты</a></li>
-			<li><a href="#">Готовые дома</a></li>
-			<li><a href="#">Наши работы</a></li>
-			<li><a href="#">Фундамент</a></li>
-			<li><a href="#">Преимущества</a></li>
-			<li><a href="#">Отзывы</a></li>
-			<li><a href="#">Контакты</a></li>
-		</ul>
-	</nav>
-	<header class="header">
-		<div class="wrap flex">
-			<div class="logo">
-				<a href="/"><img src="img/logo.svg"></a>
-			</div>
-			<ul>
-				<li><a href="#">О нас</a></li>
-				<li><a href="#">Проекты</a></li>
-				<li><a href="#">Готовые дома</a></li>
-				<li><a href="#">Наши работы</a></li>
-				<li><a href="#">Фундамент</a></li>
-				<li><a href="#">Преимущества</a></li>
-				<li><a href="#">Отзывы</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<div class="social">
-				<a href="#"><img src="img/social1.svg"></a>
-				<a href="#"><img src="img/social2.svg"></a>
-			</div>
-			<div class="contacts">
-				<a href="tel:+7 (911) 600-60-57">+7 (911) 600-60-57</a>
-				<a href="mailto:89116030891@yandex.ru">89116030891@yandex.ru</a>
-			</div>
-			<a class="menu-button">
-				<span></span>
-				<span></span>
-				<span></span>
-			</a>
-		</div>
-	</header>
-	<div class="container">
+	<div class="container-xl">
 		<div class="navi">
 			<a href="#">Главная</a> | <a href="#">Каркасные дома</a> | Проект №14
 		</div>
 		<div class="item-page">
 			<div class="row">
 				<div class="col-lg-8">
-					<div class="photos">
-						<div class="photo"><img src="img/item.png"></div>
-						<div class="photo"><img src="img/item.png"></div>
-						<div class="photo"><img src="img/item.png"></div>
-					</div>
-					<div class="slider__nav">
-						<button class="slider__button slider__button--prev"></button>
-						<button class="slider__button slider__button--next"></button>
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/item.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/item.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/item.png" alt="">
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
 					</div>
 				</div>
 				<div class="col-lg-4">
@@ -138,7 +100,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-8">
+				<div class="col-lg-8 col-cost-data">
 
 
 					<div class="contents">
@@ -350,6 +312,26 @@
 			</div>
 		</div>
 	</footer>
+
+	<script type="module">
+		import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+		const swiper = new Swiper(".mySwiper", {
+      direction: 'horizontal',
+
+      // If we need pagination
+      pagination: {
+      el: '.swiper-pagination',
+		clickable: true
+      },
+
+      // Navigation arrows
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+
+    });
+	</script>
 </body>
 
 </html>

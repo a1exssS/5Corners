@@ -702,8 +702,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			// Получаем текущую высоту прокрутки
 			var scrollHeight = $(this).scrollTop();
 
-			// Если прокрутка больше 70px, меняем цвет фона элемента
-			if (scrollHeight > 1) {
+			// Если прокрутка больше 48px, меняем цвет фона элемента
+			if (scrollHeight > 48) {
 				if (window.innerWidth > 1199) {
 					changingElementPhone.css({ "font-size": "18px" })
 					changingElementMenu.css({ "gap": "20px" })
@@ -713,6 +713,16 @@ document.addEventListener('DOMContentLoaded', () => {
 					changingElementEmail.css({ "display": "none" })
 					changingElementSocials.css({ "display": "none" })
 					changingElement.css({ "display": "flex", "padding-top": "0px", "align-items": "center" });
+				}
+				else {
+					changingElementPhone.removeAttr("style")
+					changingElementMenu.removeAttr("style")
+					changingElementContacts.removeAttr("style")
+					changingElementLogo.removeAttr("style")
+					changingElementLogoImg.removeAttr("style")
+					changingElementEmail.removeAttr("style")
+					changingElementSocials.removeAttr("style")
+					changingElement.removeAttr("style")
 				}
 			} else {
 				changingElementPhone.removeAttr("style")

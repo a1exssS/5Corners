@@ -4441,7 +4441,6 @@ a.yt.hastitle .title {
 	display: flex;
 	align-items: center;
 	height: 100%;
-	margin-right: 40px;
 	gap: 40px;
 }
 
@@ -5235,13 +5234,11 @@ a.yt.hastitle .title {
 	background-color: #FFEDE0;
 }
 
-.item-page .contents {
-	margin-top: 95px;
-}
-
-.item-page .row .col-lg-4 {
-	position: sticky;
-	top: 0;
+@media (min-width:992px) {
+	.item-page .row .col-lg-4 {
+		position: sticky;
+		top: 80px;
+	}
 }
 
 @media (max-width:991px) {
@@ -5366,4 +5363,110 @@ a.yt.hastitle .title {
 	display: inline-block;
 	margin-top: 12px;
 	display: none;
+}
+
+/* Мои изменения в слайдере */
+
+.swiper {
+	width: 100%;
+	height: 472px;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px !important;
+	object-fit: cover;
+}
+
+.swiper-button-prev {
+	width: 98px !important;
+	height: 100% !important;
+	top: 22px !important;
+	border-radius: 8px !important;
+	left: 0 !important;
+	background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+.swiper-button-prev::after {
+	background: url("./img/prev.svg") !important;
+	font-size: 0 !important;
+	width: 36px;
+	display: block;
+	height: 36px;
+}
+
+.swiper-button-next {
+	width: 98px !important;
+	height: 100% !important;
+	border-radius: 8px !important;
+	top: 22px !important;
+	right: 0 !important;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+.swiper-button-next::after {
+	background: url("./img/prev.svg") !important;
+	transform: rotate(180deg);
+	font-size: 0 !important;
+	width: 36px;
+	display: block;
+	height: 36px;
+}
+
+.swiper-pagination-bullet {
+	background-color: #fff !important;
+	opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #99DC56 !important;
+}
+
+.col-cost-data {
+	margin-top: -130px;
+}
+
+@media (max-width:1269px) {
+	.col-cost-data {
+		margin-top: -170px;
+	}
+}
+
+@media (max-width:1199px) {
+	.col-cost-data {
+		margin-top: -200px;
+	}
+}
+
+@media (max-width:991px) {
+	.col-cost-data {
+		margin-top: 60px;
+	}
+}
+
+@media (max-width:991px) {
+
+	.item-page .info .name {
+		display: flex;
+		margin-top: 30px;
+	}
+
+	.item-page .info {
+		padding: 0;
+	}
+
+	.item-page .info .name span {
+		margin-left: 8px;
+	}
 }
