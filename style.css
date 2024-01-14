@@ -4918,6 +4918,15 @@ a.yt.hastitle .title {
 	font-weight: 600
 }
 
+.upload-block .form input:focus {
+	border: 1px solid #3EEC88;
+	background: #054448 !important
+}
+
+.upload-block .form input:hover {
+	border: 1px solid #3EEC88
+}
+
 .upload-block .form input::placeholder {
 	color: #90A3A4
 }

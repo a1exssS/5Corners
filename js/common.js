@@ -123,46 +123,46 @@ $(document).ready(function () {
 
 	// $(".phone-number").mask("(999) 999-9999");
 
-	if ($('body').hasClass('page_main')) {
+	// if ($('body').hasClass('page_main')) {
 
-		var divs = $('.index-select-block .list .item');
+	// 	var divs = $('.index-select-block .list .item');
 
-		function CachePositions() {
-			divs.each(function () {
-				if ($(this).css('position') != 'sticky')
-					$(this).data({ initialTop: $(this).position().top });
-			});
-		}
+	// 	function CachePositions() {
+	// 		divs.each(function () {
+	// 			if ($(this).css('position') != 'sticky')
+	// 				$(this).data({ initialTop: $(this).position().top });
+	// 		});
+	// 	}
 
-		var scrollable = $(window);
-		scrollable.scroll(function () {
-			divs.each(function () {
-				var top = $(this).data('initialTop');
-				var w = $(window).width();
+	// 	var scrollable = $(window);
+	// 	scrollable.scroll(function () {
+	// 		divs.each(function () {
+	// 			var top = $(this).data('initialTop');
+	// 			var w = $(window).width();
 
-				if (top < scrollable.scrollTop()) {
-					if (w < 992) {
-						$(this).css({ position: 'sticky', top: '150px' });
-					} else {
-						$(this).css({ position: 'sticky', top: '70px' });
-					}
-				} else {
-					$(this).css({ position: 'absolute', top: top + 'px' });
-				}
-			})
-		});
+	// 			if (top < scrollable.scrollTop()) {
+	// 				if (w < 992) {
+	// 					$(this).css({ position: 'sticky', top: '150px' });
+	// 				} else {
+	// 					$(this).css({ position: 'sticky', top: '70px' });
+	// 				}
+	// 			} else {
+	// 				$(this).css({ position: 'absolute', top: top + 'px' });
+	// 			}
+	// 		})
+	// 	});
 
-		var resizeTimeout;
-		$(window).resize(function () {
-			if (resizeTimeout)
-				clearTimeout(resizeTimeout);
-			resizeTimeout = setTimeout(function () {
-				resizeTimeout = null;
-				CachePositions();
-			}, 100);
-		});
-		CachePositions();
-	}
+	// 	var resizeTimeout;
+	// 	$(window).resize(function () {
+	// 		if (resizeTimeout)
+	// 			clearTimeout(resizeTimeout);
+	// 		resizeTimeout = setTimeout(function () {
+	// 			resizeTimeout = null;
+	// 			CachePositions();
+	// 		}, 100);
+	// 	});
+	// 	CachePositions();
+	// }
 
 	// Форма - "Консультация"
 	$('#frmcons .but').click(function () {
