@@ -762,10 +762,6 @@ main {
 	color: #054448;
 }
 
-.index-projects-block2 .block-name span {
-	color: #107A82;
-}
-
 .index-projects-block2 .sort {
 	margin: 10px 0 40px 0;
 }
@@ -4941,7 +4937,7 @@ a.yt.hastitle .title {
 	background-color: #FFEDE0 !important
 }
 
-.index-projects-block2 .block-name span {
+.index-projects-block2 .block-name span:first-child {
 	color: #054448
 }
 
@@ -5009,8 +5005,8 @@ a.yt.hastitle .title {
 		width: 100%
 	}
 
-	.main-block_filter {
-		display: none !important;
+	.from-selection_filter .main-block_filter {
+		display: none;
 		margin-top: 100px
 	}
 
