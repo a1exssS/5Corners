@@ -612,7 +612,7 @@ main {
 }
 
 .index-first-block {
-	background: url('img/index-first-block.png') center / cover;
+	background: url('/assets/templates/main/img/index-first-block.png') center / cover;
 	padding: 100px 0 30px;
 	color: #fff;
 }
@@ -781,7 +781,7 @@ main {
 	color: #054448;
 	padding: 0 44px 0 20px;
 	border: 1px solid #107A82;
-	background: url('img/select.svg') no-repeat right 20px top 50%;
+	background: url('/assets/templates/main/img/select.svg') no-repeat right 20px top 50%;
 }
 
 .index-projects-block2 .sort select:not(:last-child) {
@@ -941,7 +941,7 @@ main {
 	margin-left: 5px;
 	width: 18px;
 	height: 10px;
-	background: url('img/arrow.svg');
+	background: url('/assets/templates/main/img/arrow.svg');
 }
 
 @keyframes trambling-animation {
@@ -964,7 +964,7 @@ main {
 }
 
 .index-form-block {
-	background: url('img/index-form-block.png') center / cover;
+	background: url('/assets/templates/main/img/index-form-block.png') center / cover;
 	padding: 60px 0;
 	margin-bottom: 120px;
 }
@@ -996,7 +996,7 @@ main {
 	padding: 2px 0 2px 40px;
 	font-size: 16px;
 	line-height: 19px;
-	background: url('img/li.svg') no-repeat 0 0;
+	background: url('/assets/templates/main/img/li.svg') no-repeat 0 0;
 }
 
 .index-form-block form .field {
@@ -1020,7 +1020,7 @@ main {
 	transform: translateY(-50%);
 	left: 20px;
 	padding: 0 0 0 28px;
-	background: url('img/ru.svg') no-repeat 0 7px;
+	background: url('/assets/templates/main/img/ru.svg') no-repeat 0 7px;
 	color: #fff;
 	font-weight: 600;
 	font-size: 16px;
@@ -1083,7 +1083,7 @@ main {
 	padding: 2px 0 2px 40px;
 	font-size: 16px;
 	line-height: 19px;
-	background: url('img/li.svg') no-repeat 0 0;
+	background: url('/assets/templates/main/img/li.svg') no-repeat 0 0;
 }
 
 .index-form-block .form .field {
@@ -1107,7 +1107,7 @@ main {
 	transform: translateY(-50%);
 	left: 20px;
 	padding: 0 0 0 28px;
-	background: url('img/ru.svg') no-repeat 0 7px;
+	background: url('/assets/templates/main/img/ru.svg') no-repeat 0 7px;
 	color: #fff;
 	font-weight: 600;
 	font-size: 16px;
@@ -1317,11 +1317,11 @@ main {
 	margin-left: 5px;
 	width: 18px;
 	height: 10px;
-	background: url('img/arrow.svg');
+	background: url('/assets/templates/main/img/arrow.svg');
 }
 
 .index-select-block {
-	background: url('img/index-select-block.png') top center / cover;
+	background: url('/assets/templates/main/img/index-select-block.png') top center / cover;
 }
 
 .index-select-block .block-name {
@@ -1454,11 +1454,11 @@ main {
 }
 
 .reviews-block .item .links a.video {
-	background: url('img/video.svg') no-repeat left;
+	background: url('/assets/templates/main/img/video.svg') no-repeat left;
 }
 
 .reviews-block .item .links a.text {
-	background: url('img/text.svg') no-repeat left;
+	background: url('/assets/templates/main/img/text.svg') no-repeat left;
 }
 
 .reviews-block .item .links a:not(:last-child) {
@@ -1536,7 +1536,7 @@ main {
 	line-height: 24px;
 	text-decoration: underline;
 	padding: 0 0 0 26px;
-	background: url('img/upload.svg') no-repeat 0 0;
+	background: url('/assets/templates/main/img/upload.svg') no-repeat 0 0;
 }
 
 .upload-block form .upload a:not(:last-child) {
@@ -1564,7 +1564,7 @@ main {
 	transform: translateY(-50%);
 	left: 20px;
 	padding: 0 0 0 28px;
-	background: url('img/ru.svg') no-repeat 0 7px;
+	background: url('/assets/templates/main/img/ru.svg') no-repeat 0 7px;
 	color: #fff;
 	font-weight: 600;
 	font-size: 16px;
@@ -1631,7 +1631,7 @@ main {
 	line-height: 24px;
 	text-decoration: underline;
 	padding: 0 0 0 26px;
-	background: url('img/upload.svg') no-repeat 0 0;
+	background: url('/assets/templates/main/img/upload.svg') no-repeat 0 0;
 }
 
 .upload-block .form .upload a:not(:last-child) {
@@ -1659,7 +1659,7 @@ main {
 	transform: translateY(-50%);
 	left: 20px;
 	padding: 0 0 0 28px;
-	background: url('img/ru.svg') no-repeat 0 7px;
+	background: url('/assets/templates/main/img/ru.svg') no-repeat 0 7px;
 	color: #fff;
 	font-weight: 600;
 	font-size: 16px;
@@ -1728,7 +1728,7 @@ main {
 .vk-block .top-link span {
 	display: inline-block;
 	vertical-align: middle;
-	background: url('img/vk.svg');
+	background: url('/assets/templates/main/img/vk.svg');
 	width: 31px;
 	height: 18px;
 	margin: -2px 4px 0 0;
@@ -1865,7 +1865,7 @@ main {
 	font-size: 16px;
 	line-height: 24px;
 	padding: 1px 0 1px 65px;
-	background: url('img/dev.svg') no-repeat 0 0;
+	background: url('/assets/templates/main/img/dev.svg') no-repeat 0 0;
 }
 
 .mobile-menu {
@@ -1965,7 +1965,7 @@ main {
 	transform: translateY(-50%);
 	left: 20px;
 	padding: 0 0 0 28px;
-	background: url('img/ru.svg') no-repeat 0 7px;
+	background: url('/assets/templates/main/img/ru.svg') no-repeat 0 7px;
 	font-weight: 600;
 	font-size: 16px;
 }
@@ -1982,7 +1982,7 @@ main {
 	font-size: 16px;
 	line-height: 24px;
 	padding: 0 0 0 26px;
-	background: url('img/upload.svg') no-repeat 0 0;
+	background: url('/assets/templates/main/img/upload.svg') no-repeat 0 0;
 }
 
 .popup .upload a:not(:last-child) {
@@ -2046,12 +2046,12 @@ main {
 
 .item-page .photos .slick-prev {
 	left: 25px;
-	background: url('img/prev.svg');
+	background: url('/assets/templates/main/img/prev.svg');
 }
 
 .item-page .photos .slick-next {
 	right: 25px;
-	background: url('img/next.svg');
+	background: url('/assets/templates/main/img/next.svg');
 }
 
 .item-page .photos .slick-dots {
@@ -2232,11 +2232,11 @@ main {
 	font-size: 24px;
 	line-height: 29px;
 	color: #054448;
-	background: url('img/arrow1.svg') no-repeat right;
+	background: url('/assets/templates/main/img/arrow1.svg') no-repeat right;
 }
 
 .item-page .contents .item .name.active {
-	background: url('img/arrow2.svg') no-repeat right;
+	background: url('/assets/templates/main/img/arrow2.svg') no-repeat right;
 }
 
 .item-page .contents .item .name span {
@@ -2306,12 +2306,12 @@ main {
 
 .item-page .options .item .name {
 	padding-right: 50px;
-	background: url('img/arrow1.svg') no-repeat top right;
+	background: url('/assets/templates/main/img/arrow1.svg') no-repeat top right;
 	position: relative;
 }
 
 .item-page .options .item .name.active {
-	background: url('img/arrow2.svg') no-repeat top right;
+	background: url('/assets/templates/main/img/arrow2.svg') no-repeat top right;
 }
 
 .item-page .options .item .name .link {
@@ -2941,7 +2941,7 @@ p.addr {
 	font-size: 20px;
 	line-height: 30px;
 	padding-left: 30px;
-	background: url('img/project-icon5.svg') no-repeat 0 1px;
+	background: url('/assets/templates/main/img/project-icon5.svg') no-repeat 0 1px;
 	display: inline-block;
 }
 
@@ -2962,7 +2962,7 @@ p.addr {
 	font-size: 20px;
 	line-height: 24px;
 	padding-left: 30px;
-	background: url('img/phone.svg') no-repeat 0 1px;
+	background: url('/assets/templates/main/img/phone.svg') no-repeat 0 1px;
 	display: inline-block;
 }
 
@@ -4431,8 +4431,6 @@ a.yt.hastitle .title {
 	background: none !important;
 }
 
-/* Мои изменения header */
-
 .header {
 	border-bottom: 1px solid #1E575B
 }
@@ -4441,30 +4439,28 @@ a.yt.hastitle .title {
 	display: flex;
 	align-items: center;
 	height: 100%;
-	gap: 40px;
+	gap: 40px
 }
-
 
 .contacts-pc a:first-child {
 	color: #fff;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 20px
 }
 
 .contacts-pc a:last-child {
 	color: #fff;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 20px
 }
 
 .contacts-pc a:hover {
-	color: #D8FEC4;
+	color: #D8FEC4
 }
 
 .header__menu {
 	display: flex;
-	gap: 40px;
-
+	gap: 40px
 }
 
 .call {
@@ -4473,133 +4469,127 @@ a.yt.hastitle .title {
 	border-radius: 4px;
 	font-size: 15px;
 	font-weight: 600;
-	background: #D8FEC4;
+	background: #D8FEC4
 }
 
 .call:hover {
 	color: #D8FEC4;
-	background: #1E575B;
-
+	background: #1E575B
 }
 
 @media (max-width:991px) {
 	.header__menu {
-		gap: 30px;
+		gap: 30px
 	}
 }
 
 @media (max-width:575px) {
 	.header__menu {
-		gap: 10px;
+		gap: 10px
 	}
 }
 
 @media (max-width:767px) {
 	.call {
-		display: none;
+		display: none
 	}
 }
 
 @media (max-width:1199px) {
 	.contacts-pc {
-		display: none;
+		display: none
 	}
 }
 
 @media (min-width:1199px) {
 	.contacts {
-		display: none;
+		display: none
 	}
 }
 
-/* Мои изменения hero slider */
-
-.slide-button:first-child {
-	border: 1px solid #EF7836;
-	background: #EF7836;
-}
-
-.slide-button:first-child:hover {
-	border: 1px solid #FFEDE0;
-	background: #FFEDE0;
-	color: #EF7836;
-}
-
 .slide-button:last-child {
-	border: 1px solid #19CDA2;
+	border: 1px solid #19CDA2
 }
 
 .slide-button:last-child:hover {
 	background: #1E575B;
 	color: #fff;
-	border: 1px solid #1E575B;
+	border: 1px solid #1E575B
+}
+
+.slide-button:first-child {
+	border: 1px solid #EF7836 !important;
+	background: #EF7836
+}
+
+.slide-button:first-child:hover {
+	border: 1px solid #FFEDE0 !important;
+	background: #FFEDE0 !important;
+	color: #EF7836 !important
 }
 
 @media (max-width:575px) {
-
 	.slide-button {
-		width: 100%;
+		width: 100%
 	}
 }
 
-/* Мои изменения advensments */
-
 .index-select-block {
 	background: #FBFAF2;
-	padding: 120px 0;
+	padding: 120px 0
 }
 
 @media (max-width:1269px) {
 	.index-select-block {
-		padding: 100px 0;
+		padding: 100px 0
 	}
 }
 
 @media (max-width:991px) {
 	.index-select-block {
-		padding: 80px 0;
+		padding: 80px 0
 	}
 }
 
 @media (max-width:767px) {
 	.index-select-block {
-		padding: 60px 0;
+		padding: 60px 0
 	}
 }
 
 .index-select-block .block-name {
 	width: 50%;
-	margin-bottom: 40px;
+	margin-bottom: 40px
 }
 
 @media (max-width:1268px) {
 	.index-select-block .block-name {
-		font-size: 40px;
+		font-size: 40px
 	}
 }
 
 @media (max-width:1199px) {
 	.index-select-block .block-name {
-		font-size: 32px;
+		font-size: 32px
 	}
 }
 
 @media (max-width:575px) {
 	.index-select-block .block-name {
-		font-size: 24px;
+		font-size: 24px
 	}
 }
 
 @media (max-width:991px) {
 	.index-select-block .block-name {
 		width: 100%;
-		margin-bottom: 40px;
+		margin-bottom: 40px
 	}
 }
 
 @media (max-width:767px) {
 	.index-select-block .block-name {
-		margin-bottom: 30px;
+		margin-bottom: 30px
 	}
 }
 
@@ -4607,96 +4597,89 @@ a.yt.hastitle .title {
 	display: grid;
 	width: 100%;
 	grid-template-columns: 1fr 1fr;
-	gap: 30px;
+	gap: 30px
 }
 
 @media (max-width:991px) {
 	.list {
 		grid-template-columns: 1fr;
-		gap: 20px;
+		gap: 20px
 	}
-
 }
 
 .block-box {
-	padding: 0 15px;
+	padding: 0 15px
 }
 
 @media (min-width:992px) {
 	.block-box {
 		position: sticky;
 		top: 90px;
-		bottom: 500px;
+		bottom: 500px
 	}
 }
 
 @media (max-width: 991px) {
-
 	.index-select-block .block-name {
-		display: block;
+		display: block
 	}
 }
 
 .index-select-block .list .item {
 	margin-bottom: 0;
-	padding: 32px;
+	padding: 32px
 }
 
-
 .index-select-block .list .item p {
-	margin: 32px 0 16px 0;
+	margin: 32px 0 16px 0
 }
 
 @media (max-width:575px) {
 	.index-select-block .list .item {
-		font-size: 14px;
+		font-size: 14px
 	}
 
 	.index-select-block .list .item p {
 		margin: 24px 0 16px 0;
 		font-size: 20px;
-		line-height: 24.2px;
+		line-height: 24.2px
 	}
-
 }
 
 @media (min-width:992px) {
 	.index-select-block .list .item {
 		position: sticky;
-		top: 220px;
+		top: 220px
 	}
 }
 
 .index-select-block .list .item:last-child {
-	grid-column: span 2;
+	grid-column: span 2
 }
 
 @media (max-width:991px) {
 	.index-select-block .list .item:last-child {
-		grid-column: span 1;
+		grid-column: span 1
 	}
-
 }
-
-/* Мои изменения Form */
 
 .index-form-block .form .name {
 	font-size: 48px;
 	line-height: 52px;
-	margin-bottom: 30px;
+	margin-bottom: 30px
 }
 
 @media (max-width:1269px) {
 	.index-form-block .form .name {
 		font-size: 44px;
-		line-height: 44px;
+		line-height: 44px
 	}
 }
 
 @media (max-width:1199px) {
 	.index-form-block .form .name {
 		font-size: 32px;
-		line-height: 35px;
+		line-height: 35px
 	}
 }
 
@@ -4708,162 +4691,160 @@ a.yt.hastitle .title {
 		background-image: url(img/index-form-block.png);
 		background-color: #054448;
 		padding: 60px 0;
-		margin-bottom: 120px;
+		margin-bottom: 120px
 	}
 }
 
 .index-form-block .form .bottom-text {
-	margin-top: 20px;
+	margin-top: 20px
 }
 
 .index-form-block .form {
 	border-radius: 12px;
 	max-width: 620px;
 	padding: 40px;
-	background: #1E575B;
+	background: #1E575B
 }
 
 @media (max-width:1269px) {
 	.index-form-block .form {
-		max-width: 550px;
+		max-width: 550px
 	}
 }
 
 @media (max-width:1199px) {
 	.index-form-block .form {
 		max-width: 466px;
-		padding: 32px;
+		padding: 32px
 	}
 }
 
 @media (max-width:991px) {
 	.index-form-block .form {
-		max-width: 345px;
+		max-width: 345px
 	}
 }
 
 @media (max-width:767px) {
 	.index-form-block .form {
 		max-width: 576px;
-		margin: 150px auto 0;
+		margin: 150px auto 0
 	}
 }
 
 @media (max-width: 575px) {
 	.index-form-block .form {
-		padding: 28px 24px;
+		padding: 28px 24px
 	}
 
 	.index-form-block .form ul li {
-		font-size: 14px;
+		font-size: 14px
 	}
 }
 
-
 .index-form-block .form button {
 	background: #EF7836;
-	color: #fff;
+	color: #fff
 }
 
 .index-form-block .form button:hover {
 	background: #FFEDE0;
-	color: #EF7836;
+	color: #EF7836
 }
 
 .index-form-block .form input {
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 600
 }
 
 .index-form-block .form input:focus {
 	border: 1px solid #3EEC88;
-	background: #054448 !important;
+	background: #054448 !important
 }
 
 .index-form-block .form input:hover {
-	border: 1px solid #3EEC88;
+	border: 1px solid #3EEC88
 }
 
 .index-form-block .form input::placeholder {
-	color: #90A3A4;
+	color: #90A3A4
 }
 
 .upload-block .form .name {
 	font-size: 48px;
 	line-height: 52px;
-	margin-bottom: 30px;
+	margin-bottom: 30px
 }
 
 @media (max-width:1269px) {
 	.upload-block .form .name {
 		font-size: 44px;
-		line-height: 44px;
+		line-height: 44px
 	}
 }
 
 @media (max-width:1199px) {
 	.upload-block .form .name {
 		font-size: 32px;
-		line-height: 35px;
+		line-height: 35px
 	}
 }
 
 @media (max-width:767px) {
 	.upload-block {
 		padding: 60px 0;
-		margin-bottom: 120px;
+		margin-bottom: 120px
 	}
 }
 
-.upload-block .container-xl {
+.upload-block .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 50px;
+	gap: 50px
 }
 
 @media (max-width:991px) {
-	.upload-block .container-xl {
-		gap: 0px;
+	.upload-block .container {
+		gap: 0px
 	}
 }
 
 @media (max-width:767px) {
-	.upload-block .container-xl {
+	.upload-block .container {
 		grid-template-columns: 1fr;
-		padding: 0;
+		padding: 0
 	}
 
-	.upload-block .container-xl .box-form {
-		padding: 0 15px;
+	.upload-block .container .box-form {
+		padding: 0 15px
 	}
 }
-
 
 .upload-block .box-image {
 	display: flex;
 	align-items: center;
-	position: relative;
+	position: relative
 }
 
 @media (max-width:767px) {
 	.upload-block .box-image {
-		justify-content: center;
+		justify-content: center
 	}
 }
 
 .upload-block .image {
-	bottom: unset;
+	bottom: unset
 }
 
 @media (max-width:991px) {
 	.upload-block .image {
-		display: block;
+		display: block
 	}
 }
 
 @media (max-width:767px) {
 	.upload-block .box-image {
-		order: -1;
+		order: -1
 	}
 
 	.upload-block .image {
@@ -4871,102 +4852,93 @@ a.yt.hastitle .title {
 		width: 340px;
 		height: 335px;
 		overflow: hidden;
-		object-fit: cover;
+		object-fit: cover
 	}
 }
 
 .upload-block .form .bottom-text {
-	margin-top: 20px;
+	margin-top: 20px
 }
 
 .upload-block .form {
 	max-width: 620px;
 	padding: 40px;
 	background: #1E575B;
-	border-radius: 12px;
+	border-radius: 12px
 }
 
 @media (max-width:1269px) {
 	.upload-block .form {
-		max-width: 550px;
+		max-width: 550px
 	}
 }
 
 @media (max-width:1199px) {
 	.upload-block .form {
 		max-width: 466px;
-		padding: 32px;
+		padding: 32px
 	}
 }
 
 @media (max-width:991px) {
 	.upload-block .form {
-		max-width: 345px;
+		max-width: 345px
 	}
 }
 
 @media (max-width:767px) {
 	.upload-block .form {
 		max-width: 576px;
-		margin: 0 auto;
+		margin: 0 auto
 	}
 }
 
 @media (max-width: 575px) {
 	.upload-block .form {
-		padding: 28px 24px;
+		padding: 28px 24px
 	}
 
 	.upload-block .form ul li {
-		font-size: 14px;
+		font-size: 14px
 	}
 }
 
-
 .upload-block .form button {
 	background: #EF7836;
-	color: #fff;
-
+	color: #fff
 }
 
 .upload-block .form button:hover {
 	background: #FFEDE0;
-	color: #EF7836;
-
+	color: #EF7836
 }
 
 .upload-block .form input {
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 600
 }
 
 .upload-block .form input::placeholder {
-	color: #90A3A4;
+	color: #90A3A4
 }
-
-/* Мои изменения в action-card */
 
 .offer-card__button {
 	background: #EF7836 !important;
-	border: 1px solid #EF7836 !important;
+	border: 1px solid #EF7836 !important
 }
 
 .offer-card__button:hover {
 	color: #EF7836 !important;
-	background-color: #FFEDE0 !important;
+	background-color: #FFEDE0 !important
 }
 
-/* Мои изменения в cat-filters */
-
 .index-projects-block2 .block-name span {
-	color: #054448;
+	color: #054448
 }
 
 .index-projects-block2 .block-name {
-	color: #107A82;
+	color: #107A82
 }
-
-/* Мои изменения в cat-new-filter */
 
 .title-text {
 	position: absolute;
@@ -4975,108 +4947,101 @@ a.yt.hastitle .title {
 	text-transform: uppercase;
 	color: #107A82;
 	font-size: 11px;
-	font-weight: 400;
+	font-weight: 400
 }
 
 .form-filter {
-	margin-top: 36px;
+	margin-top: 36px
 }
 
 .form-filter {
-	align-items: center;
+	align-items: center
 }
 
 @media (max-width:991px) {
 	.form-filter {
 		flex-wrap: wrap;
-		gap: 70px;
+		gap: 70px
 	}
 }
 
 .main-block_filter {
 	align-items: center;
 	flex-wrap: wrap;
-	margin-right: 30px;
+	margin-right: 30px
 }
 
 @media (max-width:991px) {
 	.main-block_filter {
 		margin-right: 0px;
-		gap: 10px !important;
+		gap: 10px !important
 	}
-
 }
-
 
 .block_btm-clear-filter {
 	margin-bottom: 0px !important;
-	white-space: nowrap;
+	white-space: nowrap
 }
 
 @media (min-width:1270px) {
 	.block_btm-clear-filter {
 		position: absolute;
 		top: -50px;
-		right: 0;
+		right: 0
 	}
 }
 
 .box-title-param {
-	white-space: nowrap;
+	white-space: nowrap
 }
 
 @media (max-width:575px) {
 	.main-block_filter {
-		width: 100%;
+		width: 100%
 	}
 
-	.from-selection_filter .main-block_filter {
-		display: none;
-		margin-top: 100px;
+	.main-block_filter {
+		display: none !important;
+		margin-top: 100px
 	}
 
 	.block_sort-param-main,
 	.right-block_sort,
 	.box-title-param-sort,
 	.selection_filter-sort {
-		width: 100% !important;
+		width: 100% !important
 	}
 
 	.form-filter {
-		margin-top: 65px;
+		margin-top: 65px
 	}
 }
 
-
 @media (max-width:575px) {
-
 	.block-selection_filter {
 		right: 0 !important;
-		left: unset !important;
+		left: unset !important
 	}
 
 	.block-selection_filter {
 		position: relative !important;
-		top: unset !important;
+		top: unset !important
 	}
 
 	.block-btn-filter,
 	.block-selection_filter.hidden {
-		display: none !important;
+		display: none !important
 	}
-
 }
 
 .input-param-text span {
-	font-weight: 500;
+	font-weight: 500
 }
-
-/* Мои изменения в мобильной версии filter */
 
 .block-btn-filter-mob {
 	display: none;
 	width: 100%;
-	padding: 20px 0;
+	padding: 20px 0
 }
 
 .block-selection_filter-show-btn {
@@ -5085,11 +5050,11 @@ a.yt.hastitle .title {
 	color: #107A82;
 	border-bottom: 1px solid #107A82;
 	text-align: start;
-	width: fit-content;
+	width: fit-content
 }
 
 .block-selection_filter {
-	position: relative;
+	position: relative
 }
 
 .after-active>.btn-filter::after {
@@ -5101,13 +5066,13 @@ a.yt.hastitle .title {
 	left: 0;
 	z-index: 1;
 	bottom: 85px;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 255, 255))
 }
 
 .range-slider-input,
 .js-range-slider-area,
 .js-range-slider {
-	display: none !important;
+	display: none !important
 }
 
 .main-block_filter-header {
@@ -5127,20 +5092,20 @@ a.yt.hastitle .title {
 }
 
 .main-block_filter-header_btn {
-	background-color: transparent;
+	background-color: transparent
 }
 
 .active-filter {
-	background: unset !important;
+	background: unset !important
 }
 
 .active-filter .box-title-param {
-	background-color: #107A82 !important;
+	background-color: #107A82 !important
 }
 
 @media (max-width:575px) {
 	.block_size-param-main {
-		display: block !important;
+		display: block !important
 	}
 }
 
@@ -5151,39 +5116,37 @@ a.yt.hastitle .title {
 	align-items: center;
 	justify-content: center;
 	border-radius: 4px;
-	color: #fff;
+	color: #fff
 }
 
 .block_btm-mob-filter-btn {
 	width: 100%;
 	color: #fff;
-	border-radius: 4px;
+	border-radius: 4px
 }
 
 .block_btm-mob-filter-btn:hover {
-	color: #fff;
+	color: #fff
 }
 
 @media (min-width:576px) {
 	.block_btm-mob-filter {
-		display: none;
+		display: none
 	}
 }
 
-/* Мои изменения в card-whatinclude */
-
 .item-page .about {
-	margin-bottom: 30px;
+	margin-bottom: 30px
 }
 
 .item-page .contents .block-name {
-	font-weight: 600;
-	font-size: 32px;
+	font-weight: 600 !important;
+	font-size: 32px !important
 }
 
 .item-page .contents .item {
 	border: 1px solid transparent;
-	transition: .1s ease;
+	transition: .1s ease
 }
 
 .item-page .contents .item:hover {
@@ -5191,35 +5154,32 @@ a.yt.hastitle .title {
 }
 
 .item-page .contents .item:hover .name {
-	background: url('img/arrow-button.svg') no-repeat right;
+	background: url('/assets/templates/main/img/arrow-button.svg') no-repeat right
 }
 
 .item-page .contents .item:hover .name.active {
-	background: url('img/arrow2.svg') no-repeat right;
+	background: url('/assets/templates/main/img/arrow2.svg') no-repeat right
 }
 
-/* Мои изменения в card-chars  */
-
 .item-page .info {
-	padding-left: 20px;
+	padding-left: 20px
 }
 
 .item-page .info .prices p {
 	color: #054448;
 	font-size: 16px;
-	font-weight: 500;
-
+	font-weight: 500
 }
 
 .item-page .info .price {
-	margin-bottom: 30px;
+	margin-bottom: 30px
 }
 
 .item-page .info .bottom-text ul li {
 	list-style: disc;
 	margin-top: 5px;
 	line-height: 24px;
-	margin-left: 25px;
+	margin-left: 25px
 }
 
 .item-page .info button {
@@ -5227,43 +5187,40 @@ a.yt.hastitle .title {
 	width: 100%;
 	background: #EF7836;
 	border: 1px solid #EF7836;
-	color: #fff;
+	color: #fff
 }
 
 .item-page .info .bottom-subtext {
 	line-height: 24px;
-	margin-top: 30px;
+	margin-top: 30px
 }
 
 .item-page .info button:hover {
 	color: #EF7836;
-	background-color: #FFEDE0;
+	background-color: #FFEDE0
 }
 
 @media (min-width:992px) {
 	.item-page .row .col-lg-4 {
 		position: sticky;
-		top: 80px;
+		top: 80px
 	}
 }
 
 @media (max-width:991px) {
 	.item-page .row .col-lg-4:nth-child(2) {
-		order: 1;
+		order: 1
 	}
 }
 
-/* Мои изменения в header after scroll (nav after scroll) */
-
 @media (max-width:739px) {
-
 	.header {
-		position: absolute;
+		position: absolute
 	}
 }
 
 .header ul {
-	display: none;
+	display: none
 }
 
 .nav-after-scroll {
@@ -5271,7 +5228,9 @@ a.yt.hastitle .title {
 	background: #054448;
 	backdrop-filter: blur(27px);
 	border-bottom: 1px solid #1E575B;
-	border-top: 1px solid #1E575B
+	border-top: 1px solid #1E575B;
+	position: relative;
+	z-index: 2;
 }
 
 .nav-after-scroll ul li a {
@@ -5280,69 +5239,93 @@ a.yt.hastitle .title {
 	text-decoration: none;
 	font-weight: 500;
 	font-size: 15px;
-	line-height: 18px;
+	line-height: 18px
 }
 
 .nav-after-scroll ul li a:hover {
-	color: #D8FEC4;
+	color: #D8FEC4
 }
 
 @media (max-width:1199px) {
 	.nav-after-scroll {
-		display: none;
+		display: none
 	}
 }
 
 .nav-after-scroll .wrap {
 	max-width: 1390px;
 	padding: 0 15px;
-	margin: 0 auto;
+	margin: 0 auto
 }
 
 .nav-after-scroll .header__menu {
-	align-items: center;
+	align-items: center
 }
 
 .nav-after-scroll .logo img {
-	max-width: unset !important;
+	max-width: unset !important
 }
 
 .nav-after-scroll .contacts-pc {
 	margin-right: 0;
-	gap: 20px;
+	gap: 20px
 }
+
+@media (max-width:1389px) {
+	.contacts-pc-phone {
+		display: none;
+	}
+}
+
+@media (max-width:1199px) {
+	.contacts-pc-phone {
+		display: inline-block;
+	}
+}
+
+@media (max-width:1340px) {
+	.header ul li a {
+		font-size: 15px;
+	}
+
+	.header ul li:not(:last-child) {
+		margin-right: 20px;
+	}
+}
+
+.contacts-pc-phone {}
 
 .nav-after-scroll .header__menu,
 .nav-after-scroll .logo {
-	display: none;
+	display: none
 }
 
 .nav-after-scroll .logo {
 	width: 50px;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .nav-after-scroll ul li {
-	display: inline-block;
+	display: inline-block
 }
 
 .nav-after-scroll a {
-	color: #fff;
+	color: #fff
 }
 
 .nav-after-scroll .flex {
 	height: 100%;
-	align-items: center;
+	align-items: center
 }
 
 .nav-after-scroll ul li:not(:last-child) {
-	margin-right: 20px;
+	margin-right: 20px
 }
 
 .nav-after-scroll ul.topnav li:has(ul)>a {
 	display: flex;
 	align-items: center;
-	gap: 4px;
+	gap: 4px
 }
 
 .nav-after-scroll ul.topnav li:has(ul)>ul {
@@ -5357,16 +5340,16 @@ a.yt.hastitle .title {
 	flex-direction: column;
 	gap: 20px;
 	border-radius: 4px;
-	background: #1E575B;
+	background: #1E575B
 }
 
 .nav-after-scroll .social {
-	padding-top: 6px;
+	padding-top: 6px
 }
 
 .nav-after-scroll .contacts {
 	text-align: right;
-	padding-top: 4px;
+	padding-top: 4px
 }
 
 .nav-after-scroll .menu-button {
@@ -5375,14 +5358,30 @@ a.yt.hastitle .title {
 	position: relative;
 	display: inline-block;
 	margin-top: 12px;
-	display: none;
+	display: none
 }
-
-/* Мои изменения в слайдере */
 
 .swiper {
 	width: 100%;
-	height: 472px;
+	height: 472px
+}
+
+@media (max-width:1199px) {
+	.swiper {
+		height: 456px
+	}
+}
+
+@media (max-width:767px) {
+	.swiper {
+		height: 380px
+	}
+}
+
+@media (max-width:575px) {
+	.swiper {
+		height: 220px
+	}
 }
 
 .swiper-slide {
@@ -5391,7 +5390,7 @@ a.yt.hastitle .title {
 	background: #fff;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center
 }
 
 .swiper-slide img {
@@ -5399,7 +5398,7 @@ a.yt.hastitle .title {
 	width: 100%;
 	height: 100%;
 	border-radius: 8px !important;
-	object-fit: cover;
+	object-fit: cover
 }
 
 .swiper-button-prev {
@@ -5408,15 +5407,15 @@ a.yt.hastitle .title {
 	top: 22px !important;
 	border-radius: 8px !important;
 	left: 0 !important;
-	background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+	background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4))
 }
 
 .swiper-button-prev::after {
-	background: url("./img/prev.svg") !important;
+	background: url("/assets/templates/main/img/prev.svg") !important;
 	font-size: 0 !important;
 	width: 36px;
 	display: block;
-	height: 36px;
+	height: 36px
 }
 
 .swiper-button-next {
@@ -5425,61 +5424,62 @@ a.yt.hastitle .title {
 	border-radius: 8px !important;
 	top: 22px !important;
 	right: 0 !important;
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4))
 }
 
 .swiper-button-next::after {
-	background: url("./img/prev.svg") !important;
+	background: url("/assets/templates/main/img/prev.svg") !important;
 	transform: rotate(180deg);
 	font-size: 0 !important;
 	width: 36px;
 	display: block;
-	height: 36px;
+	height: 36px
 }
 
 .swiper-pagination-bullet {
 	background-color: #fff !important;
-	opacity: 1 !important;
+	opacity: 1 !important
 }
 
 .swiper-pagination-bullet-active {
-	background-color: #99DC56 !important;
+	background-color: #99DC56 !important
 }
 
 .col-cost-data {
-	margin-top: -130px;
+	margin-top: -200px
 }
 
 @media (max-width:1269px) {
 	.col-cost-data {
-		margin-top: -170px;
+		margin-top: -240px
 	}
 }
 
 @media (max-width:1199px) {
 	.col-cost-data {
-		margin-top: -200px;
+		margin-top: -300px
 	}
 }
 
 @media (max-width:991px) {
 	.col-cost-data {
-		margin-top: 60px;
+		margin-top: 60px
 	}
 }
 
 @media (max-width:991px) {
-
 	.item-page .info .name {
 		display: flex;
 		margin-top: 30px;
+		flex-wrap: wrap;
+		column-gap: 8px;
 	}
 
 	.item-page .info {
-		padding: 0;
+		padding: 0
 	}
 
 	.item-page .info .name span {
-		margin-left: 8px;
+		display: inline !important;
 	}
 }
