@@ -5531,7 +5531,6 @@ a.yt.hastitle .title {
 
 .upload-block-padding {
 	padding: 100px 0 0 0;
-	overflow-x: hidden;
 }
 
 .nav-after-scroll {
@@ -5647,6 +5646,7 @@ a.yt.hastitle .title {
 	.upload-block-padding {
 		margin-bottom: 0;
 		padding: 30px 0 50px 0;
+		overflow: hidden;
 	}
 
 	.upload-block .box-image-width {
