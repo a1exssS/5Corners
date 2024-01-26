@@ -25,3 +25,5 @@
 12. nav - https://a1exsss.github.io/5Corners/nav (небольшая навигация под header + изменения в common.js стр. 689 -> 728)
 
 13. header+nav - https://a1exsss.github.io/5Corners/header+nav (объеденил header и nav чтобы показать как это работает вметсе)
+
+14. faq - https://a1exsss.github.io/5Corners/faq
