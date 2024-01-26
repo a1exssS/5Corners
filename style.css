@@ -1615,6 +1615,15 @@ main {
 	line-height: 24px;
 }
 
+.text-padding p:not(:first-child) {
+	margin-top: 10px;
+}
+
+.text-padding a {
+	color: #054448;
+	font-weight: 600;
+}
+
 .upload-block .form .upload {
 	padding-bottom: 1px;
 }
