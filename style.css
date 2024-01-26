@@ -4498,7 +4498,7 @@ a.yt.hastitle .title {
 }
 
 @media (min-width:1199px) {
-	.contacts {
+	.header .contacts {
 		display: none
 	}
 }
