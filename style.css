@@ -5674,3 +5674,12 @@ a.yt.hastitle .title {
 		padding: 0 15px;
 	}
 }
+
+/* Мои изменения в footer */
+
+.footer .dev a {
+	background: unset;
+	color: #6F8C8E;
+	padding-left: 0;
+	font-size: 14px;
+}
