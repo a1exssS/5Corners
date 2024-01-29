@@ -34,7 +34,9 @@
 	<script>
 		(function ($) {
 			$(function () {
-				$('.vk').EmbedVkGallery();
+				try {
+					$('.vk').EmbedVkGallery();
+				} catch (e) {}
 			});
 		})(jQuery);
 	</script>

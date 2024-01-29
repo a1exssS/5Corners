@@ -795,36 +795,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	/// Выделение текста выбранного параметра в сортировке
-	const titleTextSort = document.querySelector('.title-text-sort');
-	const optionSort = document.querySelectorAll('.option-sort');
-	if ($('.opt-sort1').val() === titleTextSort.value) {
-		$('.opt-sort1').addClass('bold');
-	}
-	if ($('.opt-sort2').val() === titleTextSort.value) {
-		$('.opt-sort2').addClass('bold');
-	}
-	if ($('.opt-sort3').val() === titleTextSort.value) {
-		$('.opt-sort3').addClass('bold');
-	}
-	if ($('.opt-sort4').val() === titleTextSort.value) {
-		$('.opt-sort4').addClass('bold');
-	}
-	if ($('.opt-sort5').val() === titleTextSort.value) {
-		$('.opt-sort5').addClass('bold');
-	}
-	if ($('.opt-sort6').val() === titleTextSort.value) {
-		$('.opt-sort6').addClass('bold');
-	}
-	/// Выделение текста выбранного параметра в сортировке
+	try {
 
-	optionSort.forEach((el) => {
-		el.addEventListener('click', (e) => {
-			const value = e.target.value;
-			addValueText(value)
+		const titleTextSort = document.querySelector('.title-text-sort');
+		const optionSort = document.querySelectorAll('.option-sort');
+		if ($('.opt-sort1').val() === titleTextSort.value) {
+			$('.opt-sort1').addClass('bold');
+		}
+		if ($('.opt-sort2').val() === titleTextSort.value) {
+			$('.opt-sort2').addClass('bold');
+		}
+		if ($('.opt-sort3').val() === titleTextSort.value) {
+			$('.opt-sort3').addClass('bold');
+		}
+		if ($('.opt-sort4').val() === titleTextSort.value) {
+			$('.opt-sort4').addClass('bold');
+		}
+		if ($('.opt-sort5').val() === titleTextSort.value) {
+			$('.opt-sort5').addClass('bold');
+		}
+		if ($('.opt-sort6').val() === titleTextSort.value) {
+			$('.opt-sort6').addClass('bold');
+		}
+		/// Выделение текста выбранного параметра в сортировке
+
+		optionSort.forEach((el) => {
+			el.addEventListener('click', (e) => {
+				const value = e.target.value;
+				addValueText(value)
+			})
 		})
-	})
-	function addValueText(text) {
-		titleTextSort.value = text;
+		function addValueText(text) {
+			titleTextSort.value = text;
+		}
+	} catch (e) {
+
 	}
 
 	/*****************************
@@ -989,10 +994,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
-const jsInputFrom = document.querySelector('.js-input-from');
-const value = jsInputFrom.value
-console.log(value.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 '));
-$('.js-input-from').val()
+
+try {
+
+	const jsInputFrom = document.querySelector('.js-input-from');
+	const value = jsInputFrom.value
+	console.log(value.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 '));
+	$('.js-input-from').val()
+} catch (e) {
+}
 /*********************
  *
  *  input для Цены и полощади.
