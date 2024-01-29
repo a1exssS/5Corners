@@ -1,3 +1,15 @@
+Важно: 
+В тег head нужно обернуть скрипт (внизу) в try во избежание ошибок в консоле:
+  <script>
+		(function ($) {
+			$(function () {
+				try {
+					$('.vk').EmbedVkGallery();
+				} catch (e) {}
+			});
+		})(jQuery);
+	</script>
+
 Чанки:
 
 1. header.html - https://a1exsss.github.io/5Corners/header
